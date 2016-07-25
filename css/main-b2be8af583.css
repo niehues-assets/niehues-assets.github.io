@@ -3939,8 +3939,13 @@ a:hover {
 }
 .content {
   width: 90%;
-  padding: 3rem;
+  padding: 0.5rem;
   margin: 0 auto;
+}
+@media screen and (min-width: 800px) {
+  .content {
+    padding: 0.5rem;
+  }
 }
 .spinner,
 .stretched-hero:before,
