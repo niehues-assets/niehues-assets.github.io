@@ -3858,7 +3858,7 @@ a:hover {
 .area li:before {
   position: absolute;
   left: 0;
-  top: 0.5rem;
+  top: 0.5em;
   width: 1.5rem;
   height: 1.5rem;
   padding-left: 0.5rem;
@@ -3922,9 +3922,13 @@ a:hover {
 .area {
   margin: 6rem 0;
 }
+.area:first-of-type {
+  margin-top: 0;
+}
 @media screen and (max-width: 800px) {
   .area h2 {
-    font-size: 8vw;
+    font-size: 6vw;
+    margin-bottom: 0.5em;
   }
   .area h3 {
     font-size: 6vw;
@@ -3932,19 +3936,22 @@ a:hover {
   .area li,
   .area p {
     font-size: 4vw;
-  }
-  .area li:before {
-    top: 3vw;
+    line-height: 1.6;
   }
 }
 .content {
-  width: 90%;
-  padding: 0.5rem;
   margin: 0 auto;
+  padding: 1.5rem;
 }
 @media screen and (min-width: 800px) {
   .content {
-    padding: 0.5rem;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .content {
+    width: 90%;
+    padding: 3.5rem;
   }
 }
 .spinner,
@@ -4056,6 +4063,24 @@ a:hover {
     font-size: 4.5vw;
   }
 }
+.main-nav {
+  background-color: #fff;
+  padding: 1.5rem 0 1rem 0;
+}
+.main-nav .title-brand {
+  font-family: modern_sansregular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+.main-nav .sub-title-brand {
+  font-weight: bold;
+  width: 70%;
+}
+@media screen and (max-width: 800px) {
+  .main-nav .title-brand {
+    font-size: 5vw;
+  }
+}
 .meta {
   z-index: 2002;
   color: #fff;
@@ -4085,6 +4110,68 @@ a:hover {
   .qualifications {
     float: left;
     width: 50%;
+  }
+}
+.sub-header {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin: 0 auto;
+}
+@media screen and (min-width: 800px) {
+  .sub-header {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .sub-header {
+    width: 90%;
+    padding: 3.5rem;
+  }
+}
+.image-teaser {
+  min-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.image-teaser img {
+  max-width: 100%;
+}
+.image-teaser .central-teaser {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 1000;
+}
+.image-teaser .central-teaser h1 {
+  font-family: modern_sansregular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+.image-teaser .central-teaser p.sub-title {
+  margin-top: 0.5rem;
+  font-family: JaapokkiRegular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 800px) {
+  .image-teaser .central-teaser {
+    width: 70%;
+  }
+  .image-teaser .central-teaser h1 {
+    font-size: 5vw;
+  }
+  .image-teaser .central-teaser p.sub-title {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+  .image-teaser .central-teaser h1 {
+    font-size: 4vw;
+  }
+  .image-teaser .central-teaser p.sub-title {
+    font-size: 2vw;
   }
 }
 .teaser {
