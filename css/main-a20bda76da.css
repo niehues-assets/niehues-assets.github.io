@@ -4057,7 +4057,12 @@ a:hover {
   font-style: normal;
   font-size: 1.5rem;
 }
+.address p {
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
 .address h3 {
+  font-family: open_sansregular, 'Helvetica Neue', Helvetica, arial, sans-serif;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -4092,6 +4097,15 @@ a:hover {
 }
 .form .action {
   text-align: right;
+}
+@media screen and (max-width: 400px) {
+  .address h3 {
+    font-size: 5vw;
+  }
+  .address .tellink,
+  .address p {
+    font-size: 4vw;
+  }
 }
 @media screen and (min-width: 800px) {
   .contact {
