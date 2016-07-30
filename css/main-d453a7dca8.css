@@ -1019,7 +1019,9 @@ a:hover {
 .background a:before,
 .reference-list a:before,
 .area li:before,
-.area a:before {
+.area a:before,
+.error-message:before,
+.success-message:before {
   display: inline-block;
   font-family: "Ionicons";
   speak: none;
@@ -1338,7 +1340,8 @@ a:hover {
 .ion-ios-brush-outline:before {
   content: "\f131";
 }
-.ion-ios-bug:before {
+.ion-ios-bug:before,
+.error-message:before {
   content: "\f134";
 }
 .ion-ios-bug-outline:before {
@@ -2200,7 +2203,8 @@ a:hover {
 .ion-ios-paper-outline:before {
   content: "\f471";
 }
-.ion-ios-paper-plane:before {
+.ion-ios-paper-plane:before,
+.success-message:before {
   content: "\f1dd";
 }
 .ion-ios-paper-plane-outline:before {
@@ -4100,6 +4104,36 @@ a:hover {
 }
 .form .action {
   text-align: right;
+}
+.error-message {
+  color: #ff7070;
+  border: 1px solid #ff7070;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  padding-left: 4.5rem;
+  position: relative;
+}
+.error-message:before {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  font-size: 3rem;
+  transform: translateY(-50%);
+}
+.success-message {
+  color: #47db49;
+  border: 1px solid #47db49;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  padding-left: 4rem;
+  position: relative;
+}
+.success-message:before {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  font-size: 2rem;
+  transform: translateY(-50%);
 }
 @media screen and (max-width: 400px) {
   .address h3 {
