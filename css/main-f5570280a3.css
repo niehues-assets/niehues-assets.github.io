@@ -4039,14 +4039,6 @@ a:hover {
     width: 90%;
   }
 }
-.contact .form,
-.contact .address {
-  float: left;
-  width: 49%;
-}
-.contact .form {
-  margin-right: 1.9%;
-}
 .address {
   font-style: normal;
   font-size: 1.5rem;
@@ -4086,6 +4078,23 @@ a:hover {
 }
 .form .action {
   text-align: right;
+}
+@media screen and (min-width: 800px) {
+  .contact {
+    margin: 0 auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+  .contact .form,
+  .contact .address {
+    float: left;
+    width: 48%;
+  }
+  .contact .form {
+    margin-right: 3.9%;
+  }
 }
 .content {
   margin: 0 auto;
@@ -4478,5 +4487,11 @@ a:hover {
   }
   .teasers.teaser-count-4 li:last-of-type {
     margin-right: 0;
+  }
+}
+@media screen and (min-width: 800px) and (min-width: 800px) {
+  .contact {
+    margin-bottom: 3rem;
+    width: 90%;
   }
 }
