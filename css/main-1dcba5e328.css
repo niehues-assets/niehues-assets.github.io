@@ -3944,6 +3944,7 @@ a:hover {
   .about-me {
     margin-bottom: 3rem;
     width: 90%;
+    max-width: 1280px;
   }
 }
 .about-me header h2 {
@@ -4015,6 +4016,7 @@ a:hover {
   .area {
     margin-bottom: 3rem;
     width: 90%;
+    max-width: 1280px;
   }
 }
 .area:first-of-type {
@@ -4051,6 +4053,7 @@ a:hover {
   .contact {
     margin-bottom: 3rem;
     width: 90%;
+    max-width: 1280px;
   }
 }
 .address {
@@ -4299,11 +4302,11 @@ a:hover {
 @media screen and (min-width: 800px) {
   .sub-header {
     width: 90%;
+    max-width: 1500px;
   }
 }
 @media screen and (min-width: 1280px) {
   .sub-header {
-    width: 90%;
     padding: 3.5rem;
   }
 }
@@ -4447,6 +4450,7 @@ a:hover {
   .teasers {
     margin-bottom: 3rem;
     width: 90%;
+    max-width: 1280px;
   }
 }
 .teasers:after {
@@ -4521,5 +4525,6 @@ a:hover {
   .contact {
     margin-bottom: 3rem;
     width: 90%;
+    max-width: 1280px;
   }
 }
