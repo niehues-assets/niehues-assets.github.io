@@ -3859,6 +3859,17 @@ a:hover {
   margin-bottom: 1.5rem;
   font-weight: normal;
 }
+.markdown h4,
+.background h4,
+.reference-list h4,
+.area h4 {
+  font-family: open_sansregular, 'Helvetica Neue', Helvetica, arial, sans-serif;
+  padding-top: 1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
 .markdown li,
 .background li,
 .reference-list li,
@@ -4019,6 +4030,9 @@ a:hover {
   }
   .area h3 {
     font-size: 6vw;
+  }
+  .area h4 {
+    font-size: 5vw;
   }
   .area li,
   .area p {
