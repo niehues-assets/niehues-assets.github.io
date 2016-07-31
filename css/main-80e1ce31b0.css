@@ -1021,6 +1021,7 @@ a:hover {
 .area li:before,
 .area a:before,
 .error-message:before,
+.validation-message:before,
 .success-message:before {
   display: inline-block;
   font-family: "Ionicons";
@@ -1341,7 +1342,8 @@ a:hover {
   content: "\f131";
 }
 .ion-ios-bug:before,
-.error-message:before {
+.error-message:before,
+.validation-message:before {
   content: "\f134";
 }
 .ion-ios-bug-outline:before {
@@ -1743,7 +1745,8 @@ a:hover {
 .ion-ios-flame-outline:before {
   content: "\f42e";
 }
-.ion-ios-flash:before {
+.ion-ios-flash:before,
+.validation-message:before {
   content: "\f17e";
 }
 .ion-ios-flash-outline:before {
@@ -4110,6 +4113,11 @@ a:hover {
   outline: none;
   margin-bottom: 1rem;
 }
+.form input.error,
+.form textarea.error {
+  border-color: #ff7070;
+  color: #ff7070;
+}
 .form textarea {
   min-height: 15rem;
 }
@@ -4127,15 +4135,17 @@ a:hover {
 .form .action {
   text-align: right;
 }
-.error-message {
+.error-message,
+.validation-message {
   color: #ff7070;
   border: 1px solid #ff7070;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   margin-bottom: 1rem;
   padding-left: 4.5rem;
   position: relative;
 }
-.error-message:before {
+.error-message:before,
+.validation-message:before {
   position: absolute;
   left: 1rem;
   top: 50%;
