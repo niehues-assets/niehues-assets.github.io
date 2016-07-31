@@ -4318,6 +4318,9 @@ a:hover {
   letter-spacing: 0.3rem;
   display: inline-block;
 }
+.main-nav .title-brand a {
+  border-bottom: 0;
+}
 .main-nav .sub-title-brand {
   font-weight: bold;
   width: 70%;
