@@ -3951,6 +3951,13 @@ a:hover {
     max-width: 1280px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .about-me {
+    margin-bottom: 9rem;
+    width: 90%;
+    max-width: 1280px;
+  }
+}
 .about-me header h2 {
   margin-bottom: 2rem;
 }
@@ -4023,6 +4030,13 @@ a:hover {
     max-width: 1280px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .area {
+    margin-bottom: 9rem;
+    width: 90%;
+    max-width: 1280px;
+  }
+}
 .area:first-of-type {
   margin-top: 0;
 }
@@ -4056,6 +4070,13 @@ a:hover {
 @media screen and (min-width: 800px) {
   .contact {
     margin-bottom: 3rem;
+    width: 90%;
+    max-width: 1280px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact {
+    margin-bottom: 9rem;
     width: 90%;
     max-width: 1280px;
   }
@@ -4096,6 +4117,7 @@ a:hover {
   width: auto;
   display: inline-block;
   min-width: 30%;
+  cursor: pointer;
 }
 .form input[type="submit"]:hover {
   background-color: #ff7070;
@@ -4265,18 +4287,7 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 400px) {
-  .meta .meta-about-me {
-    display: none;
-  }
-  .meta .meta-practice {
-    display: none;
-  }
-}
 @media screen and (max-width: 800px) {
-  .meta .meta-about-me {
-    display: none;
-  }
   .stretched-hero .central-teaser h1,
   .main-header .central-teaser h1 {
     font-size: 8vw;
@@ -4295,6 +4306,7 @@ a:hover {
   font-family: modern_sansregular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 2rem;
   letter-spacing: 0.3rem;
+  display: inline-block;
 }
 .main-nav .sub-title-brand {
   font-weight: bold;
@@ -4303,6 +4315,40 @@ a:hover {
 @media screen and (max-width: 800px) {
   .main-nav .title-brand {
     font-size: 5vw;
+  }
+}
+.sub-header .main-nav {
+  position: relative;
+}
+.sub-header .meta {
+  top: auto;
+  right: 0;
+  bottom: 1.25rem;
+}
+.sub-header .meta li {
+  text-align: right;
+}
+.sub-header .meta a {
+  color: #000;
+}
+.sub-header .meta a:hover {
+  background-color: #ff7070;
+  color: #fff;
+}
+.content .meta {
+  display: none;
+}
+@media screen and (max-width: 948px) {
+  .sub-header .meta li {
+    display: none;
+  }
+  .content .meta {
+    display: block;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .sub-header .meta .meta-about-me {
+    display: none;
   }
 }
 .meta {
@@ -4327,6 +4373,54 @@ a:hover {
 .meta a:hover {
   background-color: #fff;
   color: #000;
+}
+@media screen and (max-width: 400px) {
+  .meta .meta-about-me {
+    display: none;
+  }
+  .meta .meta-practice {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .meta .meta-about-me {
+    display: none;
+  }
+}
+.content .meta {
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: static;
+}
+@media screen and (min-width: 800px) {
+  .content .meta {
+    margin-bottom: 3rem;
+    width: 90%;
+    max-width: 1280px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .content .meta {
+    margin-bottom: 9rem;
+    width: 90%;
+    max-width: 1280px;
+  }
+}
+.content .meta li {
+  margin-left: 0;
+}
+.content .meta li,
+.content .meta a {
+  display: block;
+}
+.content .meta a {
+  color: #000;
+}
+.content .meta a:hover {
+  background-color: #ff7070;
+  color: #fff;
 }
 .sub-header {
   padding-left: 1.5rem;
@@ -4487,6 +4581,13 @@ a:hover {
     max-width: 1280px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .teasers {
+    margin-bottom: 9rem;
+    width: 90%;
+    max-width: 1280px;
+  }
+}
 .teasers:after {
   content: '';
   display: table;
@@ -4558,6 +4659,13 @@ a:hover {
 @media screen and (min-width: 800px) and (min-width: 800px) {
   .contact {
     margin-bottom: 3rem;
+    width: 90%;
+    max-width: 1280px;
+  }
+}
+@media screen and (min-width: 800px) and (min-width: 1280px) {
+  .contact {
+    margin-bottom: 9rem;
     width: 90%;
     max-width: 1280px;
   }
