@@ -4569,16 +4569,16 @@ a:hover {
   transition: min-height 0.5s;
 }
 .teaser-couples .img-container {
-  background-image: url("../images/couple_small-088b4f939e.png");
+  background-image: url("../images/couple_small.png");
 }
 .teaser-single .img-container {
-  background-image: url("../images/single_small-48decc0545.png");
+  background-image: url("../images/single_small.png");
 }
 .teaser-family .img-container {
-  background-image: url("../images/family_small-42c88e8952.png");
+  background-image: url("../images/family_small.png");
 }
 .teaser-corporations .img-container {
-  background-image: url("../images/corporation_small-b386d8653d.png");
+  background-image: url("../images/corporation_small.png");
 }
 .teasers {
   margin: 0 auto;
