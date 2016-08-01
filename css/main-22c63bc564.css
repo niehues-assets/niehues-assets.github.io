@@ -23,6 +23,9 @@ a,
 input[type=submit] {
   transition: background 0.5s;
 }
+.together {
+  white-space: nowrap;
+}
 @font-face {
   font-family: 'JaapokkiRegular';
   src: url("../fonts/jaapokki/Regular/web/jaapokki-regular.eot"); /* IE9 Compat Modes */
@@ -4292,8 +4295,8 @@ input[type=submit] {
   font-size: 2rem;
   text-align: center;
   display: inline;
-  background-color: rgba(6,6,6,0.36);
-  box-shadow: 1rem 0 0 rgba(6,6,6,0.36), -1rem 0 0 rgba(6,6,6,0.36);
+  background-color: rgba(255,112,112,0.65);
+  box-shadow: 1rem 0 0 rgba(255,112,112,0.65), -1rem 0 0 rgba(255,112,112,0.65);
   line-height: 1.9;
   padding-top: 0.5rem;
 }
@@ -4402,13 +4405,8 @@ input[type=submit] {
 }
 .meta a:link,
 .meta a:active {
-  color: #fff;
-  background-color: transparent;
-}
-.meta a:hover,
-.meta a:focus {
-  background-color: #fff;
   color: #000;
+  background-color: transparent;
 }
 @media screen and (max-width: 400px) {
   .meta .meta-about-me {
@@ -4508,8 +4506,8 @@ input[type=submit] {
   font-family: JaapokkiRegular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   display: inline;
-  background-color: rgba(255,112,112,0.75);
-  box-shadow: 1rem 0 0 rgba(255,112,112,0.75), -1rem 0 0 rgba(255,112,112,0.75);
+  background-color: rgba(255,112,112,0.65);
+  box-shadow: 1rem 0 0 rgba(255,112,112,0.65), -1rem 0 0 rgba(255,112,112,0.65);
   line-height: 1.7;
 }
 @media screen and (max-width: 800px) {
