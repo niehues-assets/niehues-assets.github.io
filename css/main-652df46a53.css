@@ -4131,6 +4131,11 @@ input[type=submit] {
   min-width: 30%;
   cursor: pointer;
 }
+.form input[type="submit"],
+.form input[type="submit"]:focus {
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+}
 .form input[type="submit"]:hover {
   background-color: #ff7070;
   border-color: #ff7070;
@@ -4351,10 +4356,13 @@ input[type=submit] {
 .sub-header .meta li {
   text-align: right;
 }
-.sub-header .meta a {
+.sub-header .meta a,
+.sub-header .meta a:focus {
+  background-color: transparent;
   color: #000;
 }
-.sub-header .meta a:hover {
+.sub-header .meta a:hover,
+.sub-header .meta a:focus:hover {
   background-color: #ff7070;
   color: #fff;
 }
@@ -4438,10 +4446,13 @@ input[type=submit] {
 .content .meta a {
   display: block;
 }
-.content .meta a {
+.content .meta a,
+.content .meta a:focus {
   color: #000;
+  background-color: transparent;
 }
-.content .meta a:hover {
+.content .meta a:hover,
+.content .meta a:focus:hover {
   background-color: #ff7070;
   color: #fff;
 }
@@ -4541,7 +4552,6 @@ input[type=submit] {
   user-select: none;
 }
 .teaser a .overlay {
-  visibility: hidden;
   background-color: rgba(255,112,112,0.85);
   position: absolute;
   top: 0;
@@ -4549,8 +4559,12 @@ input[type=submit] {
   bottom: 0;
   left: 0;
   z-index: 1003;
-  opacity: 0;
   transition: opacity 0.5s;
+}
+.teaser a .overlay,
+.teaser a:focus .overlay {
+  visibility: hidden;
+  opacity: 0;
 }
 .teaser a:hover .overlay {
   visibility: visible;
