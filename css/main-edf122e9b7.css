@@ -4131,12 +4131,13 @@ input[type=submit] {
   min-width: 30%;
   cursor: pointer;
 }
-.form input[type="submit"],
-.form input[type="submit"]:focus {
+.form input[type="submit"]:link,
+.form input[type="submit"]:active {
   background-color: #fff;
   border: 1px solid #d1d1d1;
 }
-.form input[type="submit"]:hover {
+.form input[type="submit"]:hover,
+.form input[type="submit"]:focus {
   background-color: #ff7070;
   border-color: #ff7070;
   color: #fff;
@@ -4356,13 +4357,12 @@ input[type=submit] {
 .sub-header .meta li {
   text-align: right;
 }
-.sub-header .meta a,
-.sub-header .meta a:focus {
-  background-color: transparent;
-  color: #000;
-}
+.sub-header .meta a:link,
+.sub-header .meta a:active,
+.sub-header .meta a background-color transparent,
+.sub-header .meta a color #000,
 .sub-header .meta a:hover,
-.sub-header .meta a:focus:hover {
+.sub-header .meta a:focus {
   background-color: #ff7070;
   color: #fff;
 }
@@ -4396,12 +4396,17 @@ input[type=submit] {
   margin-left: 1.5rem;
 }
 .meta a {
-  color: #fff;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-bottom: 0;
 }
-.meta a:hover {
+.meta a:link,
+.meta a:active {
+  color: #fff;
+  background-color: transparent;
+}
+.meta a:hover,
+.meta a:focus {
   background-color: #fff;
   color: #000;
 }
@@ -4446,13 +4451,13 @@ input[type=submit] {
 .content .meta a {
   display: block;
 }
-.content .meta a,
-.content .meta a:focus {
+.content .meta a:link,
+.content .meta a:active {
   color: #000;
   background-color: transparent;
 }
 .content .meta a:hover,
-.content .meta a:focus:hover {
+.content .meta a:focus {
   background-color: #ff7070;
   color: #fff;
 }
@@ -4561,16 +4566,18 @@ input[type=submit] {
   z-index: 1003;
   transition: opacity 0.5s;
 }
-.teaser a .overlay,
-.teaser a:focus .overlay {
+.teaser a:link .overlay,
+.teaser a:active .overlay {
   visibility: hidden;
   opacity: 0;
 }
-.teaser a:hover .overlay {
+.teaser a:hover .overlay,
+.teaser a:focus .overlay {
   visibility: visible;
   opacity: 1;
 }
-.teaser a:hover .label {
+.teaser a:hover .label,
+.teaser a:focus .label {
   background-color: transparent;
   box-shadow: none;
 }
