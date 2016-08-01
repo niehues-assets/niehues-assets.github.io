@@ -19,6 +19,10 @@ a {
 a:hover {
   border-bottom: none;
 }
+a,
+input[type=submit] {
+  transition: background 0.5s;
+}
 @font-face {
   font-family: 'JaapokkiRegular';
   src: url("../fonts/jaapokki/Regular/web/jaapokki-regular.eot"); /* IE9 Compat Modes */
@@ -4282,8 +4286,8 @@ a:hover {
   font-size: 2rem;
   text-align: center;
   display: inline;
-  background-color: rgba(255,112,112,0.75);
-  box-shadow: 1rem 0 0 rgba(255,112,112,0.75), -1rem 0 0 rgba(255,112,112,0.75);
+  background-color: rgba(6,6,6,0.36);
+  box-shadow: 1rem 0 0 rgba(6,6,6,0.36), -1rem 0 0 rgba(6,6,6,0.36);
   line-height: 1.9;
   padding-top: 0.5rem;
 }
@@ -4306,6 +4310,12 @@ a:hover {
   .main-header .central-teaser p.sub-title {
     font-size: 4.5vw;
     line-height: 2;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .stretched-hero .central-teaser,
+  .main-header .central-teaser {
+    max-width: 70%;
   }
 }
 .main-nav {
@@ -4525,6 +4535,10 @@ a:hover {
   text-decoration: none;
   margin-bottom: 1rem;
   border-bottom: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .teaser a .overlay {
   visibility: hidden;
