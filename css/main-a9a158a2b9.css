@@ -4571,11 +4571,13 @@ input[type=submit] {
   visibility: hidden;
   opacity: 0;
 }
+.teaser a.hover .overlay,
 .teaser a:hover .overlay,
 .teaser a:focus .overlay {
   visibility: visible;
   opacity: 1;
 }
+.teaser a.hover .label,
 .teaser a:hover .label,
 .teaser a:focus .label {
   background-color: transparent;
