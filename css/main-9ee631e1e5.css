@@ -4125,6 +4125,10 @@ input[type=submit] {
   border-color: #ff7070;
   color: #ff7070;
 }
+.form input[disabled=disabled],
+.form textarea[disabled=disabled] {
+  color: #d5d5d5;
+}
 .form textarea {
   min-height: 15rem;
 }
