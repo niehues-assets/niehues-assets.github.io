@@ -4000,7 +4000,7 @@ input[type=submit] {
 .reference-list li {
   list-style-type: none;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 641px) {
   .background li,
   .reference-list li,
   .background p,
@@ -4050,7 +4050,7 @@ input[type=submit] {
 .area:first-of-type {
   margin-top: 0;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 641px) {
   .area {
     margin: 2rem 0;
   }
@@ -4184,7 +4184,7 @@ input[type=submit] {
   font-size: 2rem;
   transform: translateY(-50%);
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 641px) {
   .address h3 {
     font-size: 5vw;
   }
@@ -4412,7 +4412,7 @@ input[type=submit] {
   color: #000;
   background-color: transparent;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 641px) {
   .meta .meta-about-me {
     display: none;
   }
@@ -4501,7 +4501,8 @@ input[type=submit] {
   z-index: 1000;
 }
 .image-teaser .central-teaser h1 {
-  font-family: modern_sansregular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: opensans_bold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
   font-size: 4rem;
   letter-spacing: 0.3rem;
 }
@@ -4720,5 +4721,41 @@ input[type=submit] {
     margin-bottom: 9rem;
     width: 90%;
     max-width: 1280px;
+  }
+}
+.debug.development-environment:after {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4rem;
+  padding-top: 0.5rem;
+  width: 20%;
+  background-color: #f00;
+  text-align: center;
+}
+@media screen and (max-width: 641px) {
+  .debug.development-environment:after {
+    background-color: #ffee8f;
+    content: 'up-to-small';
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 800px) {
+  .debug.development-environment:after {
+    background-color: #ceff8f;
+    content: 'from-small-to-medium';
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1280px) {
+  .debug.development-environment:after {
+    background-color: #8febff;
+    content: 'from-medium-to-large';
+  }
+}
+@media screen and (min-width: 1280px) {
+  .debug.development-environment:after {
+    background-color: #ff8fed;
+    content: 'from-large';
   }
 }
