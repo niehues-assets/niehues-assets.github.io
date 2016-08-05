@@ -1027,7 +1027,11 @@ input[type=submit] {
 .error-message:before,
 .validation-message:before,
 .success-message:before,
-.scroll-indicator:before {
+.scroll-indicator:before,
+.scroll-menu .home:before,
+.scroll-menu .home:hover:before,
+.scroll-menu .top:before,
+.scroll-menu .top:hover:before {
   display: inline-block;
   font-family: "Ionicons";
   speak: none;
@@ -1908,10 +1912,12 @@ input[type=submit] {
 .ion-ios-help-outline:before {
   content: "\f446";
 }
-.ion-ios-home:before {
+.ion-ios-home:before,
+.scroll-menu .home:hover:before {
   content: "\f448";
 }
-.ion-ios-home-outline:before {
+.ion-ios-home-outline:before,
+.scroll-menu .home:before {
   content: "\f447";
 }
 .ion-ios-ice-cream:before {
@@ -2029,13 +2035,15 @@ input[type=submit] {
 .ion-ios-log-in:before {
   content: "\f1b1";
 }
-.ion-ios-log-in-outline:before {
+.ion-ios-log-in-outline:before,
+.scroll-menu .top:hover:before {
   content: "\f1b1";
 }
 .ion-ios-log-out:before {
   content: "\f1b2";
 }
-.ion-ios-log-out-outline:before {
+.ion-ios-log-out-outline:before,
+.scroll-menu .top:before {
   content: "\f1b2";
 }
 .ion-ios-magnet:before {
@@ -4386,9 +4394,19 @@ input[type=submit] {
 }
 .stretched-hero .meta a:link,
 .main-header .meta a:link,
+.stretched-hero .meta a:visited,
+.main-header .meta a:visited,
+.stretched-hero .meta a:active,
+.main-header .meta a:active {
+  background-color: transparent;
+  color: #fff;
+}
+.stretched-hero .meta a:hover,
+.main-header .meta a:hover,
 .stretched-hero:active,
 .main-header:active {
-  color: #fff;
+  color: #000;
+  background-color: #fff;
 }
 @media screen and (max-width: 800px) {
   .stretched-hero .central-teaser h1,
@@ -4574,6 +4592,37 @@ input[type=submit] {
   }
   100% {
     bottom: 3rem;
+  }
+}
+.scroll-menu {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .scroll-menu {
+    display: block;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 1%;
+    z-index: 1999;
+  }
+  .scroll-menu .home,
+  .scroll-menu .top {
+    display: block;
+    background-color: #fff;
+    padding: 0.7rem 1rem;
+    border: none;
+  }
+  .scroll-menu .home:before {
+    font-size: 3rem;
+  }
+  .scroll-menu .top {
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  .scroll-menu .top:before {
+    font-size: 3rem;
   }
 }
 .sub-header {
