@@ -1027,6 +1027,7 @@ input[type=submit] {
 .error-message:before,
 .validation-message:before,
 .success-message:before,
+.contact .map-link:before,
 .scroll-indicator:before,
 .scroll-menu .home:before,
 .scroll-menu .home:hover:before,
@@ -2290,7 +2291,8 @@ input[type=submit] {
 .ion-ios-pin:before {
   content: "\f1e5";
 }
-.ion-ios-pin-outline:before {
+.ion-ios-pin-outline:before,
+.contact .map-link:before {
   content: "\f1e4";
 }
 .ion-ios-pint:before {
@@ -4199,6 +4201,9 @@ input[type=submit] {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+.contact .map-link {
+  cursor: pointer;
 }
 @media screen and (max-width: 641px) {
   .address h3 {
