@@ -3970,9 +3970,10 @@ input[type=submit] {
 }
 @media screen and (min-width: 1280px) {
   .about-me {
-    margin-bottom: 9rem;
+    margin-bottom: 3rem;
     width: 90%;
     max-width: 1280px;
+    padding: 1.5rem;
   }
 }
 .about-me header h2 {
@@ -4051,9 +4052,10 @@ input[type=submit] {
 }
 @media screen and (min-width: 1280px) {
   .area {
-    margin-bottom: 9rem;
+    margin-bottom: 3rem;
     width: 90%;
     max-width: 1280px;
+    padding: 1.5rem;
   }
 }
 .area:first-of-type {
@@ -4095,9 +4097,10 @@ input[type=submit] {
 }
 @media screen and (min-width: 1280px) {
   .contact {
-    margin-bottom: 9rem;
+    margin-bottom: 3rem;
     width: 90%;
     max-width: 1280px;
+    padding: 1.5rem;
   }
 }
 .address {
@@ -4226,11 +4229,6 @@ input[type=submit] {
 .content {
   margin: 0 auto;
   padding: 1.5rem 0;
-}
-@media screen and (min-width: 1280px) {
-  .content {
-    padding: 3.5rem 0;
-  }
 }
 .main-footer {
   display: block;
@@ -4535,9 +4533,10 @@ input[type=submit] {
 }
 @media screen and (min-width: 1280px) {
   .content .meta {
-    margin-bottom: 9rem;
+    margin-bottom: 3rem;
     width: 90%;
     max-width: 1280px;
+    padding: 1.5rem;
   }
 }
 .content .meta li {
@@ -4707,6 +4706,17 @@ input[type=submit] {
     font-size: 2vw;
   }
 }
+@media screen and (min-width: 1280px) {
+  .image-teaser .central-teaser.centralized {
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
 .teaser {
   list-style-type: none;
   background-color: #fff;
@@ -4778,10 +4788,10 @@ input[type=submit] {
   transition: min-height 0.5s;
 }
 .teaser-couples .img-container {
-  background-image: url("../images/couple_small-088b4f939e.png");
+  background-image: url("../images/couple_small-13aabf5d10.png");
 }
 .teaser-single .img-container {
-  background-image: url("../images/single_small-48decc0545.png");
+  background-image: url("../images/single_small-8a620b2594.png");
 }
 .teaser-family .img-container {
   background-image: url("../images/family_small-42c88e8952.png");
@@ -4805,9 +4815,10 @@ input[type=submit] {
 }
 @media screen and (min-width: 1280px) {
   .teasers {
-    margin-bottom: 9rem;
+    margin-bottom: 3rem;
     width: 90%;
     max-width: 1280px;
+    padding: 1.5rem;
   }
 }
 .teasers:after {
@@ -4889,9 +4900,10 @@ input[type=submit] {
 }
 @media screen and (min-width: 800px) and (min-width: 1280px) {
   .contact {
-    margin-bottom: 9rem;
+    margin-bottom: 3rem;
     width: 90%;
     max-width: 1280px;
+    padding: 1.5rem;
   }
 }
 .debug.development-environment:after {
