@@ -23,6 +23,9 @@ input[type=submit] {
 .together {
   white-space: nowrap;
 }
+a img {
+  border: none;
+}
 @font-face {
   font-family: 'JaapokkiRegular';
   src: url("../fonts/jaapokki/Regular/web/jaapokki-regular.eot"); /* IE9 Compat Modes */
@@ -4656,6 +4659,7 @@ input[type=submit] {
 .image-teaser img {
   width: 100%;
   max-width: 100%;
+  max-height: 600px;
 }
 .image-teaser .central-teaser {
   width: 50%;
